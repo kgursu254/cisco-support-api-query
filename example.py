@@ -9,7 +9,7 @@ from util.api_eox import ApiEox
 
 def main():
 
-    api = ApiLogin('h9mrtrht6kvckq7cuvh2qqzj', '9vhW3wgHMM5mC56xSexAneut')
+    api = ApiLogin('client_key', 'client_id')
     eox = ApiEox(api.auth_token)
     pids = ['LIC-VVCS-C-M-PAK', 'L-ISE-BSE-P5', 'M-ASR1002X-8GB', ]
     eox.query_by_pid(pids)
